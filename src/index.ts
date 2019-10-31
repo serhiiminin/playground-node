@@ -1,11 +1,9 @@
 const path = require('path');
+const util = require('util');
+const fs = require('fs');
 
-// console.log(path);
+const readdir = util.promisify(fs.readdir);
+
 const func = (name: string): string => `Hello, ${name}`;
 
-function b() {
-    console.log(module);
-    console.log(this);
-}
-
-b();
+readdir(__dirname).then(console.log);
