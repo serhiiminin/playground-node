@@ -1,2 +1,3 @@
-require('./modules/http');
-require('./modules/fs');
+require('./modules/cli');
+// require('./modules/fs');
+// require('./modules/http');
