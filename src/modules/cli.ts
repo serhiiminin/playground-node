@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // const args = process.argv
 
 // args[0] - path to bin
@@ -28,6 +30,8 @@ yargs.command(
     console.log('Adding...', args);
   }
 );
+
+console.log('CLI works'); 
 
 yargs.parse();
 
