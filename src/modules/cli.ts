@@ -25,8 +25,9 @@ yargs.command(
       type: 'string',
     }
   }, args => {
-  console.log('Adding...', args);
-});
+    console.log('Adding...', args);
+  }
+);
 
 yargs.parse();
 
